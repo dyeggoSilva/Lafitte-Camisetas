@@ -178,12 +178,14 @@ main{
 
 /* CSS das próx pág´s daqui para baixo*/
 body{
-    background: #ffffff;
+    background-image: url(/elementos/gif/ninja-animate.svg);
+    background-repeat: no-repeat;
+    background-position: left;
 
 }
 
 section{
-background: #f5843449;
+background: #f5843493;
 border-radius: 20px;
 padding: 2rem;
 width: 50rem;
@@ -207,14 +209,14 @@ footer{
     align-items: center;
 }
 #res1{
-    margin: 1rem;
+   
 }
 #res2{
-    margin: 1rem;
+    
 }
 #it{
     display: flex;
-    justify-content: space-around;
+
     align-items: center;
     padding: 0.5rem;
 
