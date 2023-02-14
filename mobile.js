@@ -1,3 +1,5 @@
+var cont = document.getElementById('res');
+
 class MobileNavbar{
     constructor(mobileMenu, navList, navLinks){
         this.mobileMenu = document.querySelector(mobileMenu);
@@ -92,28 +94,29 @@ function calcular1(){
 
 function sobrenos(){
 
-    res.innerHTML = 'Sobre Nós'
+    cont.innerHTML = 'Sobre Nós'
 
 
 }
+
+
 function adesivo(){
 
-    res.innerHTML = 'adesivo'
-
-
+    $(cont).load("pags/pagBase/calculoMetro.html");
+    
 }function papel(){
 
-    res.innerHTML = 'papel'
+    cont.innerHTML = 'papel'
 
 
 }function silk(){
 
-    res.innerHTML = 'Silk'
+    cont.innerHTML = 'Silk'
 
 
 }function home(){
 
-    res.innerHTML = 'home'
+    cont.innerHTML = 'home'
 
 
 }

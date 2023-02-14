@@ -182,7 +182,6 @@ main{
 }
 
 
-/* CSS das próx pág´s daqui para baixo*/
 
 
 body{
@@ -191,3 +190,49 @@ body{
     background-position: left;
 
 }
+
+/* CSS das próx pág´s daqui para baixo*/
+
+
+
+section{
+    background: #f5843493;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 50rem;
+    margin: auto;
+    margin-top: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+    
+    }
+    
+    footer{
+        text-align: center;
+        color: antiquewhite;
+        font-style: italic;
+    
+        
+    }
+    #hora{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        align-items: center;
+    }
+    
+    #res3{
+        margin-top: 1rem;
+        
+    }
+    #it{
+        display: flex;
+    
+        align-items: center;
+        padding: 0.5rem;
+    
+    }
+    #div3{
+        display: contents;
+    }
+    #s3{
+        text-align: center;
