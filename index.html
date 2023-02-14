@@ -13,10 +13,10 @@
     <header>
         <nav>
             <!--  logo-->
-            <a href="/index.html">
-                <img src="/elementos/logo Lafitte edt.svg" alt="">
+            
+               <img class="img" onclick="home()" src="/elementos/logo Lafitte edt.svg" alt="">
                 <!--  fFinal logo-->
-            </a>
+            
 
             <div class="mobile">
                 <!--  botão mobole-->
@@ -28,10 +28,10 @@
             
             <ul class="nav-list">
                 <!--  Link para as págs-->
-                <li><a href="/páginas/SobreNos/index.html">Sobre nós</a></li>
-                <li><a href="/páginas/Vantagens/index.html">Calculo de itens M²</a></li>
-                <li><a href="/páginas/Curso/index.html">Calculo de itens lase</a></li>
-                <li><a href="/páginas/SejaUmVoluntario/">Calculo silk</a></li>
+                <li onclick="sobrenos()">Sobre nós</li>
+                <li onclick="adesivo()">Cálculo Adesivo</li>
+                <li onclick="papel()">Cálculo Papel</li>
+                <li onclick="sil()">Cálculo Silk</li>
                 <!--  final Link paras as págs-->
             </ul>
             
@@ -47,40 +47,12 @@
     <main>
 
 
-
-  <section >
-
-    <div id="hora">
-        <div id="inicio">
-            <p id="it">Base: <input type="text" id="txtbase"></p>
-            <p id="it">Altura: <input type="text" id="txtaltura"></p>
-            
-
-            <p><input type="button"value='Verificar' onclick="calcular1()"></p>
-        </div>
-       
+        <div id="res"></div>
 
 
-        <div id="res1">
-            Preencha os dados para ver o resultado!</div>
-    </div> 
-  </section>
 
-  <section >
+  
 
-    <div id="hora">
-        <div id="inicio">
-            <p id="it">Base: <input type="text" id="txtinicio"></p>
-            <p id="it">Altura: <input type="text" id="txtfim"></p>
-            <p id="it">Qtn: <input type="text" id="txtpasso"></p>
-
-            <p><input type="button"value='Calcular' onclick="calcular2()"></p>
-        </div>
-       
-        <div id="res2">
-            Preencha os dados para ver o resultado!</div>
-    </div> 
-  </section>
 
     </main>
     

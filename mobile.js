@@ -42,15 +42,13 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 
-
-
-
-
 function calcular1(){
 
     var base = document.getElementById('txtinicio');
     var fim = document.getElementById('txtaltura');
-    var res = document.getElementById('res1')
+    var res = document.getElementById('res')
+    
+    
 
 
 
@@ -89,6 +87,34 @@ function calcular1(){
          
     }
     
+
+}
+
+function sobrenos(){
+
+    res.innerHTML = 'Sobre Nós'
+
+
+}
+function adesivo(){
+
+    res.innerHTML = 'adesivo'
+
+
+}function papel(){
+
+    res.innerHTML = 'papel'
+
+
+}function silk(){
+
+    res.innerHTML = 'Silk'
+
+
+}function home(){
+
+    res.innerHTML = 'home'
+
 
 }
 

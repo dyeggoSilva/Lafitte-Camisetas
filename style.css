@@ -29,11 +29,16 @@ nav button{
     
 }
 
-a {
+li {
     color: #000000;
     text-decoration: none;
     transition: 0.3s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    
+}
+li:hover{
+    opacity: 0.7;
 }
 a:hover {
     opacity: 0.7;
@@ -43,6 +48,7 @@ nav img{
     margin-left: 70px;
     margin-right: 400px;
     margin-top: 5px;
+    cursor: pointer;
 }
 nav{
     display: flex;
@@ -177,47 +183,11 @@ main{
 
 
 /* CSS das próx pág´s daqui para baixo*/
+
+
 body{
     background-image: url(/elementos/gif/ninja-animate.svg);
     background-repeat: no-repeat;
     background-position: left;
-
-}
-
-section{
-background: #f5843493;
-border-radius: 20px;
-padding: 2rem;
-width: 50rem;
-margin: auto;
-margin-top: 1rem;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
-
-}
-
-footer{
-    text-align: center;
-    color: antiquewhite;
-    font-style: italic;
-
-    
-}
-#hora{
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-    align-items: center;
-}
-#res1{
-   
-}
-#res2{
-    
-}
-#it{
-    display: flex;
-
-    align-items: center;
-    padding: 0.5rem;
 
 }
