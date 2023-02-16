@@ -43,62 +43,13 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
+//final da barra 
 
-function calcular1(){
-
-    var base = document.getElementById('txtinicio');
-    var fim = document.getElementById('txtaltura');
-    var res = document.getElementById('res')
-    
-    
-
-
-
-
-    if(inicio.value.length==0 || fim.value.length==0 || passo.value.length==0){
-        alert('confira os dados digitado')
-    }else{
-        var i = Number(inicio.value);
-        var f = Number(fim.value);
-        var p = Number(passo.value);
-        if(p<=0){
-            alert('passo 0, considerando passo 1 ')
-            p=1
-        }
-
-        if (i < f){
-
-            res.innerHTML='contando:'
-            for(var a = i; a<=f; a=a+p ){
-                
-                res.innerHTML += `${a} \u{1F449}`
-    
-            }
-
-        }else{
-
-            res.innerHTML='contando:'
-            for(var a = i; a>=f; a=a-p ){
-                
-                res.innerHTML += `${a} \u{1F449}`
-    
-            }
-            
-        }
-        res.innerHTML += `${a} \u{1F3C1}`
-         
-    }
-    
-
-}
 
 function sobrenos(){
 
     cont.innerHTML = 'Sobre Nós'
-
-
 }
-
 
 function adesivo(){
 
