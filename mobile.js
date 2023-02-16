@@ -93,32 +93,23 @@ function calcular1(){
 }
 
 function sobrenos(){
-
     cont.innerHTML = 'Sobre Nós'
-
-
 }
 
-
 function adesivo(){
-
     $(cont).load("pags/pagBase/calculoMetro.html");
-    
-}function papel(){
+}
 
+function papel(){
     cont.innerHTML = 'papel'
+}
 
-
-}function silk(){
-
+function silk(){
     cont.innerHTML = 'Silk'
+}
 
-
-}function home(){
-
+function home(){
     cont.innerHTML = 'home'
-
-
 }
 
 
