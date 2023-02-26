@@ -49,26 +49,23 @@ mobileNavbar.init();
 
 
 function sobrenos() {
-    main.innerHTML = 'Sobre Nós'
+    main.innerHTML = 'Sobre Nós';
 }
 
 function adesivo() {
     $(main).load("pags/pagBase/calculoMetro.html");
-
-
 }
-
 
 function papel() {
     $(main).load("pags/calc-papel/calcPapel.html");
 }
 
 function silk() {
-  $(main).load("pags/calc-silk/calcSilk.html")
+  $(main).load("pags/calc-silk/calcSilk.html");
 }
 
 function home() {
-    main.innerHTML = 'home'
+    main.innerHTML = 'home';
 }
 
 
@@ -114,5 +111,33 @@ function calcular2() {
     else {
         res2.innerHTML = `A quantidade total na folha de 70x140cm é de ${total}un e fica o valor de R$65,00`;
     }
+}
+
+function CalcSilk(){
+    var camisas = document.getElementById('camisas')
+    var telas = document.getElementById('telas')
+    var aplic = document.getElementById('ap')
+    var res = document.getElementById('resSilk')
+
+    var c = Number(camisas.value)
+    var t = Number(telas.value)
+    var a = Number(aplic.value)
+
+    var valorCamisas = c * 32;
+    var valorTelas = t * 35;
+    var valorAplic = a * 18;
+
+    var res1 = valorAplic + valorTelas + valorCamisas;
+
+    var uni = res1 / c
+
+    res.innerHTML = `Valor total e de <strong> R$ ${res1},00 </strong> e o valor unitário fica R$${uni},00`
+
+    console.log(valorTelas);
+    console.log(valorCamisas);
+    console.log(valorAplic);
+
+
+
 }
 
