@@ -119,12 +119,15 @@ function CalcSilk(){
     var aplic = document.getElementById('ap')
     var res = document.getElementById('resSilk')
 
+    var xg = document.getElementById("camisasxg")
+
     var c = Number(camisas.value)
     var t = Number(telas.value)
     var a = Number(aplic.value)
+    
 
     var valorCamisas = c * 32;
-    var valorTelas = t * 35;
+    var valorTelas = t * 40;
     var valorAplic = a * 18;
 
     var res1 = valorAplic + valorTelas + valorCamisas;
@@ -133,11 +136,89 @@ function CalcSilk(){
 
     res.innerHTML = `Valor total e de <strong> R$ ${res1},00 </strong> e o valor unitário fica R$${uni},00`
 
+   /* function add(){
+
+        var totalxg = x * 45;
+
+        var res2 = totalxg + res1;
+
+        res.innerHTML = `Valor total e de <strong> R$ ${res2},00 </strong>`
+
+       
+    }*/
+
     console.log(valorTelas);
     console.log(valorCamisas);
     console.log(valorAplic);
-
-
-
 }
+
+function calcPapel(){
+   var a3 = document.getElementById('folha');
+   var folha= String(a3.value);
+   console.log(folha);
+
+
+   for (var i = 0; i < folha.length; i++){
+    if ( folha.checked ) {
+
+        if(A3 == "A3"){
+            var Pacote_i = "Pacote UM";
+            alert(Pacote_i);
+
+        }else if (folha == "A4") {
+            var Pacote_ii = "Pacote DOIS";
+            alert(Pacote_ii);
+        }
+    }
+}
+}
+
+
+   /*if(A3 == "A3"){
+
+    var res2 = document.getElementById('resPapel');
+    var base = document.getElementById("base");
+    var altura = document.getElementById("altura")
+
+    var i = 0;
+    var ba = Number(base.value)
+    var qo = 0;
+
+    var j = 0
+    var al = Number(altura.value)
+    var qv = 0
+
+
+    for (qo = 0; i <27; qo++) {
+        i += ba
+        if (i > 27) { break; }
+    }
+
+    
+    for (qv= 0; j < 40; qv++) {
+        j += al
+        if (j > 40) { break; }
+    }
+
+    var total = qo * qv;
+
+    console.log(`qo ${qo}`)
+    console.log(`j ${qv}`)
+    console.log(`j ${j}`)
+    console.log(`i ${i}`)
+    console.log(`total ${total}`)
+
+
+    if (total == 1) {
+        res2.innerHTML = `A quantidade total na folha A3 é de 1un e fica o valor de R$10,50 com corte e 7,50 sem corte`;
+    }
+    else {
+        res2.innerHTML = `A quantidade total na folha A3 é de ${total}un e fica o valor de R$10,50 com corte e 7,50 sem corte`;
+    }
+   }
+*/
+
+
+
+
 

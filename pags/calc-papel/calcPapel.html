@@ -5,8 +5,8 @@
     <div>
         <div>
             <div>
-                <h1>Cálculo de quantidade por M² baseado no tamanho.</h1>
-                <p>(EXE: 4x4 é igual 500un por M²)</p>
+                <h1>Cálculo de quantidade por folha de papl.</h1>
+                <p>(EXE: 4x4 é igual 60un por A3)</p>
             </div>
 
             <div class="s1">
@@ -15,16 +15,21 @@
 
                 <label for="">Altura: </label>
                 <input type="number" name="" id="altura">
+                
+                <label for="">A3: </label>
+                <input type="checkbox" value= "A3" name="A3" id="folha">
+                <label for="">A4: </label>
+                <input type="checkbox" name="A4" id="folha">
             </div>
 
             <div class="s1">
-                <p><input type="button" value='Verificar' onclick="calcular2()"></p>
+                <p><input type="button" value='Verificar' onclick="calcPapel()"></p>
             </div>
         </div>
 
 
 
-        <div class="s1" id="res1">
+        <div class="s1" id="resPapel">
             Preencha os dados para ver o resultado!
         </div>
 
