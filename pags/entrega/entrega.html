@@ -1,0 +1,40 @@
+
+
+
+    <div id="app">
+        <label for="pedido">Pedido:</label>
+        <input class="input" type="text" id="pedido" placeholder="Número do Pedido">
+    
+        <label for="nome">Nome:</label>
+        <input class="input" type="text" id="nome" placeholder="Seu Nome">
+    
+        <label for="produto">Produto:</label>
+        <input class="input" type="text" id="produto" placeholder="Nome do Produto">
+    
+        <label for="telefone">Telefone:</label>
+        <input class="input" type="text" id="telefone" placeholder="Seu Telefone">
+    
+        <button onclick="criarPedido()">Buscar</button>
+        <button onclick="listarPedidosEntrega()">Listar Pedidos</button>
+
+    
+        <h2>Pedidos</h2>
+        <table id="pedidosTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Pedido</th>
+                    <th>Nome</th>
+                    <th>Produto</th>
+                    <th>Telefone</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="pedidosBody"></tbody>
+        </table>
+    </div>
+    
+   
+  
+
+    
