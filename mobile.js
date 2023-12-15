@@ -48,8 +48,8 @@ mobileNavbar.init();
 //final da barra 
 
 
-function sobrenos() {
-    main.innerHTML = 'Sobre Nós';
+function login() {
+    $(main).load("pags/login/login.html");
 }
 
 function adesivo() {
